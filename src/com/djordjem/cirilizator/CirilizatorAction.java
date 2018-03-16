@@ -9,7 +9,7 @@ import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.project.Project;
 
-public class Cirilizator extends AnAction {
+public class CirilizatorAction extends AnAction {
 
   private Transliterator transliterator = new LatToCyrV2();
 

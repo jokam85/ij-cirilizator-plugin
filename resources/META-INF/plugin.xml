@@ -28,7 +28,7 @@
     </extensions>
 
     <actions>
-        <action id="Cirilizator.Cirilizacija" class="com.djordjem.cirilizator.Cirilizator" text="Ćirilizacija"
+        <action id="Cirilizator.Cirilizacija" class="com.djordjem.cirilizator.CirilizatorAction" text="Ćirilizacija"
                 description="Selektovani tekst konvertuje u ćirilicu">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
