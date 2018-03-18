@@ -9,9 +9,9 @@ import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.project.Project;
 
-public class CirilizatorAction extends AnAction {
+public class LatToCyrAction extends AnAction {
 
-  private Transliterator transliterator = new LatToCyrV2();
+  private LatToCyr transliterator = new LatToCyr();
 
   @Override
   public void update(AnActionEvent e) {

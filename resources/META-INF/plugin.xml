@@ -1,16 +1,16 @@
 <idea-plugin>
     <id>com.djordjem.idea.plugin.cirilizator</id>
     <name>Ćirilizator</name>
-    <version>1.1</version>
+    <version>1.2</version>
     <vendor email="jokam85@gmail.com">Đorđe Mijailović</vendor>
 
     <description><![CDATA[
-      Transliterates selected text from latin to serbian cyrillic.<br>
+      Transliterates selected text from latin to serbian cyrillic and vice versa.<br>
       Appears in editor menu (right click) on selected text.<br>
     ]]></description>
 
     <change-notes><![CDATA[
-      Initial version<br>
+      Added latin to cyrillic transliteration
     ]]>
     </change-notes>
 
@@ -28,9 +28,13 @@
     </extensions>
 
     <actions>
-        <action id="Cirilizator.Cirilizacija" class="com.djordjem.cirilizator.CirilizatorAction" text="Ćirilizacija"
+        <action id="Cirilizator.LatToCyr" class="com.djordjem.cirilizator.LatToCyrAction" text="Latinica -> ћирилица"
                 description="Selektovani tekst konvertuje u ćirilicu">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+        <action id="Cirilizator.CyrToLat" class="com.djordjem.cirilizator.CyrToLatAction" text="Ћирилица -> latinica"
+                description="Selektovani tekst konvertuje u latinicu">
+            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="Cirilizator.LatToCyr"/>
         </action>
     </actions>
 
