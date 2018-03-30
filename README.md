@@ -1,5 +1,5 @@
-# InteliJ IDEA cirilizator plugin
-Intelij IDEA plugin for transliteration of text to Serbian Cyrillic from latin and vice versa .
+# IntelliJ IDEA cirilizator plugin
+IntelliJ IDEA plugin for transliteration of text to Serbian Cyrillic from latin and vice versa .
 
 ## Plugin page
 http://plugins.jetbrains.com/plugin/10536--irilizator
